@@ -18,3 +18,6 @@ npm install
 npx cypress open      # Interactive
 npx cypress run       # Headless
 ```
+
+# My Cypress Automation Framework
+[![Cypress Tests](https://github.com/tejaswini15801/E-COMMERCE-UI-CYPRESS/actions/workflows/cypress.yml/badge.svg)](https://github.com/tejaswini15801/E-COMMERCE-UI-CYPRESS/actions/workflows/cypress.yml)
