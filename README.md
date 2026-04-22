@@ -1,7 +1,5 @@
-# My Cypress Automation Framework
-[![Cypress Tests](https://github.com/tejaswini15801/E-COMMERCE-UI-CYPRESS/actions/workflows/cypress.yml/badge.svg)](https://github.com/tejaswini15801/E-COMMERCE-UI-CYPRESS/actions/workflows/cypress.yml)
-
 # E-Commerce UI - Cypress Automation Suite
+[![Cypress Tests](https://github.com/tejaswini15801/E-COMMERCE-UI-CYPRESS/actions/workflows/cypress.yml/badge.svg)](https://github.com/tejaswini15801/E-COMMERCE-UI-CYPRESS/actions/workflows/cypress.yml)
 
 Automated E2E test suite for an e-commerce application using Cypress.
 
@@ -13,7 +11,7 @@ Automated E2E test suite for an e-commerce application using Cypress.
 - Contact Form, Reviews
 
 ## Tech Stack
-Cypress | JavaScript | Page Object Model
+Cypress | JavaScript | GitHub Actions
 
 ## Run Tests
 ```bash
