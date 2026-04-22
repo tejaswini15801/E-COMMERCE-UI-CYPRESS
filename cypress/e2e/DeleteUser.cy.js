@@ -26,7 +26,7 @@ describe('Delete User', () => {
       zipcode,
       mobile_number
     };
-    
+
     // Visit the registration page
     cy.visit('/');
     cy.get('.shop-menu > .navbar-nav > li:nth-child(4) > a').click();
@@ -52,16 +52,17 @@ describe('Delete User', () => {
     cy.get('[data-qa="mobile_number"]').type(mobile_number);
     cy.get('[data-qa="create-account"]').click();
     cy.get('.title.text-center').should('contain', 'Account Created!');
+    cy.get('[data-qa="continue-button"]').click();
+    cy.get('.shop-menu > .nav > :nth-child(4) > a').click();
 
     // Login after registration
-    cy.get('.nav > :nth-child(4) > a').click();
-    cy.get('input[data-qa=login-email]').type(randomEmail);
-    cy.get('input[data-qa=login-password]').type('Test@123');
+    cy.get('input[data-qa="login-email"]', { timeout: 10000 }).should('be.visible').type(randomEmail)
+    cy.get('input[data-qa="login-password"]').type('Test@123');
     cy.get('.login-form > form > button').click();
-    cy.get('.title.text-center').should('contain', 'Logged in as ' + randomFirstName);
+    cy.get('.shop-menu > .nav > :nth-child(10) > a').should('contain', 'Logged in as ' + randomFirstName);
 
-    //Delete User
-    cy.get('.fa.fa-trash-o').click();
+    // Delete User
+    cy.get('.shop-menu > .nav > :nth-child(5) > a').click();
 
   });
 
